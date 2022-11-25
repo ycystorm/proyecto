@@ -1,0 +1,518 @@
+ html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+   
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    background-size:cover ;
+}
+h1{font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{font-size: 2em;}
+p{ font-size: 2em;}
+p{font-size: 1.25em;}
+
+.enlaces-menu li{font-size: 1.20em;}
+
+
+    header{
+       *position: fixed;
+        *width: 100%;
+    }
+  .logo{
+    width: 170px;
+    height: 90px;
+    border-radius: 20px;
+  
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: #294674;
+    padding: 20px;
+}
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.ham span{
+    display: block;
+    background-color: #f3f3f3;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.enlaces-menu li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 15px;
+    transition:all 300ms ease ;
+    text-decoration: none;
+    color: #121212;
+}
+
+.enlaces-menu li:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+/*seccion  imagen de fondo*/
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 480px;
+    width: 100%;
+    color: white;
+    background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
+
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+    
+    background-position: center center;
+}
+/*seccion de mis habilidades*/
+.pro .mesa{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pro .text{
+    width: 50%;
+    justify-content: center;
+    padding: 0px 30px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.pro h2{
+    margin-top: 0px;
+}
+.pro .img-container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left ;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+ }
+
+ .img-container img{
+    border-radius: 20px;
+    box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+ }
+ .lista li{font-size: 2em;}
+
+ /* seccion carrusel */
+
+ .logros .Carousel{
+    width: 100%;
+    margin: 30px 30px;
+    margin-bottom: 40px;
+    
+}
+.logros .Carousel h2{
+    font-size: 26px;
+    line-height: 38px;
+    padding-bottom: 24px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    
+}
+
+/* images */
+
+.logros .slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 90vw;
+    overflow: hidden;
+}
+.logros .slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.logros .slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+.logros .slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+.logros .slick h4 small{
+    font-size: 15px;
+    display: block;
+}
+.logros .slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+.logros .slick a img:hover{
+    opacity: .85;
+}
+
+/* buttons */
+
+.logros .slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.logros .slick-arrow:focus{
+    outline: 0;
+}
+.logros .slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.logros .slick-prev{
+    left: 0px;
+}
+.logros .slick-next{
+    right: 0px;
+}
+
+/*footer*/
+
+footer{
+    position: absoluta;
+    bottom: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#121212;
+    color: white;
+}
+
+.copyright-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.copyright{
+    font-size: 12px;
+    opacity: 0.7;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.footer-menus{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+}
+
+.footer-container{
+    height: fit-content;
+    width: 100%;
+    padding: 3rem 6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .website-logo{
+    margin-bottom: 1.2rem;
+    font-size: calc(1vw +20px);
+}
+
+.footer-info, .menu-item-footer{
+    margin: 0.2rem 0;
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.menu-item-footer:hover{
+    opacity: 1;
+}
+
+.menu-title{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+.social-link{
+    height: 100%;
+    width: 30px;
+    background-image: url();
+    background-size: 70%;
+    background-position: center;
+    margin-right: 1rem;
+    background-repeat: no-repeat;
+}
+.social-link:hover{
+    opacity: 0.7;
+}
+
+footer .social-link:nth-of-type(2){
+    background-image: url();
+}
+
+footer .social-link:nth-of-type(3){
+    background-image: url();
+}
+
+
+
+
+
+@media screen and (max-width: 720px){
+    
+    .logo{
+        padding-left: 25px;
+    }
+    .ham{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: 0.5s 0.1s;
+    }
+    .ham:hover{
+        transform: rotate(360deg);
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0 ;
+    }
+   .enlaces-menu{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+   }
+   .enlaces-menu li >a {
+    transform: scale(1);
+    text-align: right;
+    padding: 10px;
+    *margin-right: 30px;
+    margin-left: 200px;
+   }
+   .enlaces-menu.activado{
+    display: flex;
+    animation: muestraMenu 350ms ease-in-out
+    both;
+   }
+   @keyframes muestraMenu{
+    from{opacity: 0;}
+    to{opacity: 1;}
+   }
+   .br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+   }
+   .br-2.animado{
+    opacity: 0;
+    }
+   .br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+    
+    }
+    /*seccion de la imagen de fondo*/
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        width: 100%;
+        color: white;
+        background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
+        *background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ) 
+        ,url("../img/moscu\ 2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover ;
+         background-position: center center;
+    }
+
+    /*seccion de mis habilidades pantalla celular */
+    .pro .mesa{
+        display: flex;
+        flex-direction: column;
+    }
+    .pro .img-container {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 50%;
+        width: 100px;
+        width: 50%;
+     }
+     .pro .img-container img{
+        width: 320px;
+        
+     }
+    .pro .text{
+        
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        padding: 0px 20px;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+       
+    }
+    .lista li{font-size: 1em;}
+    h2{ font-size: 2em;}
+    /*seccion carrusel*/
+
+
+
+
+    /*footer*/
+    
+    .footer-container{
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-content-container{
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid #2a2a2a;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .social-link:nth-of-type(2){
+        align-items: flex-start;
+    }
+    
+    footer .social-link:nth-of-type(3){
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-menus{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+
+    .footer-menus .footer-content-container:nth-of-type(1){
+        width: 45%;
+        align-items: flex-start;
+        border-bottom: none;
+    }
+    
+
+
+}
