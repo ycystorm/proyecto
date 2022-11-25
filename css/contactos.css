@@ -1,4 +1,4 @@
- html{
+html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -17,8 +17,7 @@ h1{font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{font-size: 2em;}
 p{ font-size: 2em;}
-p{ font-size: 2em;}
-
+p{font-size: 1.25em;}
 
 .enlaces-menu li{font-size: 1.20em;}
 
@@ -95,160 +94,142 @@ nav{
     transition: .5s;
     
 }
-/*seccion  imagen de fondo*/
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/* seccion del formulario formulario*/
+:root{
+    *--colorTextos: #49454567;
+    --colorTextos: #fff;
+}
+
+.formulario {
+    width: 400px;
+    height: 700px;
+}
+
+  .form h1{
     text-align: center;
-    height: 480px;
-    width: 100%;
-    color: white;
-    background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
-
-    background-repeat: no-repeat;
-    background-size: cover ;
-    
-    
-    background-position: center center;
-}
-/*seccion de mis habilidades*/
-li{font-size: 1.5em;}
-.pro .mesa{
-    display: flex;
-    justify-content: space-evenly;
-}
-.pro .text{
-    width: 50%;
     justify-content: center;
-    padding: 0px 30px;
-    padding-left: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 100px;
-}
-.pro h2{
-    margin-top: 0px;
-}
-.pro .img-container{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left ;
-    width: 50%;
-    margin-top: 15px;
-    margin-left: 20px;
- }
-
- .img-container img{
-    border-radius: 20px;
-    box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
- }
- .lista li{font-size: 2em;}
-
- /* seccion carrusel */
-
- .logros .Carousel{
-    width: 100%;
-    margin: 30px 30px;
-    margin-bottom: 40px;
-    
-}
-.logros .Carousel h2{
-    font-size: 26px;
-    line-height: 38px;
-    padding-bottom: 24px;
-    opacity: .9;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    text-align: center;
-    
-}
-
-/* images */
-
-.logros .slick-list{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    height: 304px;
-    padding: 10px 0px;
-    margin: 0px auto;
-    max-width: 90vw;
-    overflow: hidden;
-}
-.logros .slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: .5s ease-in-out;
-}
-.logros .slick{
-    position: relative;
-    width: 275px;
-    padding: 0 18px;
-    float: left;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-}
-.logros .slick h4{
-    position: absolute;
-    z-index: 1;
-    font-size: 22px;
-    line-height: 23px;
+    margin: 10px 0;
+    font-weight: 800;
     color: #fff;
-    padding: 15px;
-}
-.logros .slick h4 small{
-    font-size: 15px;
-    display: block;
-}
-.logros .slick a img{
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
-    transition: .3s ease-in-out;
-}
-.logros .slick a img:hover{
-    opacity: .85;
 }
 
-/* buttons */
+form{
+    margin-top: 20px;
+    margin-left: 120px;
+    background: #666666;
+    width: 350px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
 
-.logros .slick-arrow{
-    border-radius: 30px;
-    background-color: #fff;
-    position: absolute;
-    z-index: 4;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
-    border: 0;
-    cursor: pointer;
+.padre{
+    display: flex;
 }
-.logros .slick-arrow:focus{
-    outline: 0;
-}
-.logros .slick-arrow svg{
-    width: 12px;
+.formulario{
+    width: 50%;
     height: 100%;
-    color: rgba(0,0,0,.7);
 }
-.logros .slick-prev{
-    left: 0px;
+.form{
+    width: 100%;
+    margin: auto;
 }
-.logros .slick-next{
-    right: 0px;
+form .grupo{
+    position: relative;
+    margin: 45px;
 }
 
-/*footer*/
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px ;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+    
+
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+ label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+ }
+
+ 
+ input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+ }
+ .barra{
+    position: relative;
+    display: block;
+    width: 100%;
+ }
+ .barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D );
+    transition: 0.3s ease all;
+    left: 0%;
+ }
+
+ .form button{
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    background: linear-gradient(to right, #6A82FB, #FC5C7D );
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+ }
+
+ .imagen img{
+    width: 500px ;
+    border-radius: 20px;
+
+ }
+
+ .imagen-contexto{
+    width: 500px;
+    height: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .imagen-contexto p{
+    margin-top: 15px;
+    font-size: 2em;
+ }
+
+ /*footer*/
 
 footer{
     position: absoluta;
@@ -357,11 +338,8 @@ footer .social-link:nth-of-type(3){
 }
 
 
-
-
-
 @media screen and (max-width: 720px){
-    
+    /*header*/
     .logo{
         padding-left: 25px;
     }
@@ -417,66 +395,48 @@ footer .social-link:nth-of-type(3){
     transform: rotate(45deg) translate(-10px, -8px);
     
     }
-    /*seccion de la imagen de fondo*/
-    .hero{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 250px;
-        width: 100%;
-        color: white;
-        background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
-        *background-image:linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-            ) 
-        ,url("../img/moscu\ 2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover ;
-         background-position: center center;
+
+    /* seccion del formulario*/
+     form{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        background: #666666;
+        width: 340px;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     }
 
-    /*seccion de mis habilidades pantalla celular */
-    p{
-        font-size: 2em;
-    }
-    .pro .mesa{
+    .padre{
         display: flex;
         flex-direction: column;
+        *flex-wrap: wrap-reverse;
     }
-    .pro .img-container {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 50%;
-        width: 100px;
-        width: 50%;
-     }
-     .pro .img-container img{
-        width: 320px;
+    .imagen img{
+        width: 350px ;
+        border-radius: 20px;
         
+    
      }
-    .pro .text{
-        
+    
+     .imagen-contexto{
         width: 100%;
         height: 50%;
-        justify-content: center;
-        padding: 0px 20px;
-        padding-left: 50px;
+        margin-top: 50px;
         display: flex;
-        align-items: center;
-       
-    }
-    .lista li{ font-size: 2em;}
-    h2{ font-size: 2em;}
-    /*seccion carrusel*/
+        flex-direction: column;
+        padding: 0px 20px;
+        
+     }
+     .imagen-contexto p{
+        margin-top: 15px;
+        font-size: 2em;
+        justify-content: center;
+        margin-bottom: 15px;
+     }
 
-
-
-
-    /*footer*/
-    
+     /* seccion del footer*/
     .footer-container{
         padding: 2rem;
         flex-direction: column;
@@ -517,8 +477,7 @@ footer .social-link:nth-of-type(3){
         width: 45%;
         align-items: flex-start;
         border-bottom: none;
+        
     }
     
-
-
 }
