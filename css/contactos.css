@@ -1,6 +1,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
 }
 *,*::before, *::after{
     box-sizing: inherit;
@@ -22,13 +23,9 @@ p{font-size: 1.25em;}
 .enlaces-menu li{font-size: 1.20em;}
 
 
-    header{
-       *position: fixed;
-        *width: 100%;
-    }
   .logo{
-    width: 170px;
-    height: 90px;
+    width: 140px;
+    height: 120px;
     border-radius: 20px;
   
     
@@ -38,7 +35,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     min-height: 8vh;
-    background-color: #294674;
+    background-color:  #16c1c8;
     padding: 20px;
 }
 .ham{
@@ -89,7 +86,7 @@ nav{
 
 .enlaces-menu li:hover{
     transform: scale(1.1);
-    background: #0074C7;
+    background: rgb(209, 225, 227)7;
     box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
     transition: .5s;
     
@@ -372,7 +369,6 @@ footer .social-link:nth-of-type(3){
     transform: scale(1);
     text-align: right;
     padding: 10px;
-    *margin-right: 30px;
     margin-left: 200px;
    }
    .enlaces-menu.activado{
@@ -410,7 +406,6 @@ footer .social-link:nth-of-type(3){
     .padre{
         display: flex;
         flex-direction: column;
-        *flex-wrap: wrap-reverse;
     }
     .imagen img{
         width: 350px ;

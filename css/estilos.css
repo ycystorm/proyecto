@@ -1,6 +1,7 @@
  html{
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
 }
 *,*::before, *::after{
     box-sizing: inherit;
@@ -22,14 +23,9 @@ p{ font-size: 2em;}
 
 .enlaces-menu li{font-size: 1.20em;}
 
-
-    header{
-       *position: fixed;
-        *width: 100%;
-    }
   .logo{
-    width: 170px;
-    height: 90px;
+    width: 140px;
+    height: 120px;
     border-radius: 20px;
   
     
@@ -39,7 +35,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     min-height: 8vh;
-    background-color: #294674;
+    background-color: #16c1c8;
     padding: 20px;
 }
 .ham{
@@ -90,7 +86,7 @@ nav{
 
 .enlaces-menu li:hover{
     transform: scale(1.1);
-    background: #0074C7;
+    background: rgb(209, 225, 227);
     box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
     transition: .5s;
     
@@ -104,7 +100,7 @@ nav{
     height: 480px;
     width: 100%;
     color: white;
-    background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
+    background: url('../img/mi\ grupo.jpg') no-repeat center center fixed;
 
     background-repeat: no-repeat;
     background-size: cover ;
@@ -112,6 +108,7 @@ nav{
     
     background-position: center center;
 }
+
 /*seccion de mis habilidades*/
 li{font-size: 1.5em;}
 .pro .mesa{
@@ -124,9 +121,8 @@ li{font-size: 1.5em;}
     padding: 0px 30px;
     padding-left: 50px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-top: 30px,
 }
 .pro h2{
     margin-top: 0px;
@@ -142,11 +138,29 @@ li{font-size: 1.5em;}
 
  .img-container img{
     border-radius: 20px;
+    width: 650px;
+    height: 100%;
     box-shadow:  0px 0px 0px 0px rgba(0, 0, 0, 0.5);
  }
- .lista li{font-size: 2em;}
+ .titulo-inicial h2{
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+ }
+  .mesa h2{
+    text-align: center;
+  }
+ .text .lista li{
+    font-size: 2em;
+    background-position: left ;}
+
+    .texto-p p{
+        justify-content: center;
+        text-align: center;
+    }
 
  /* seccion carrusel */
+
 
  .logros .Carousel{
     width: 100%;
@@ -200,10 +214,14 @@ li{font-size: 1.5em;}
     z-index: 1;
     font-size: 22px;
     line-height: 23px;
-    color: #fff;
-    padding: 15px;
+    color: rgb(166, 213, 230);
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    background-color: black ;
+    width: 225px;
 }
-.logros .slick h4 small{
+*.logros .slick h4 {
     font-size: 15px;
     display: block;
 }
@@ -395,7 +413,6 @@ footer .social-link:nth-of-type(3){
     transform: scale(1);
     text-align: right;
     padding: 10px;
-    *margin-right: 30px;
     margin-left: 200px;
    }
    .enlaces-menu.activado{
@@ -423,15 +440,10 @@ footer .social-link:nth-of-type(3){
         align-items: center;
         justify-content: center;
         height: 250px;
-        width: 100%;
+        width: 400px;
+        
         color: white;
-        background: url('../img/nuva\ york\ 1.jpg') no-repeat center center fixed;
-        *background-image:linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-            ) 
-        ,url("../img/moscu\ 2.jpg");
+        background: url('../img/mi\ grupo.jpg') no-repeat center center fixed;
         background-repeat: no-repeat;
         background-size: cover ;
          background-position: center center;
